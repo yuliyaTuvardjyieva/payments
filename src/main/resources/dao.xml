@@ -1,0 +1,27 @@
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="url" value="jdbc:mysql://localhost:3306/payments" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	</bean>
+
+	<bean id="personDAO" class="by.ittc.payments.db.impl.PersonDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="cardDAO" class="by.ittc.payments.db.impl.CardDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="countDAO" class="by.ittc.payments.db.impl.CountDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>

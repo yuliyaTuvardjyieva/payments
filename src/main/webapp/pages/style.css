@@ -1,0 +1,167 @@
+body {
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	border: 1px solid gray;
+	background-color: #444;
+	width: 1295px;
+	height: 50px;
+	margin: 25px;
+}
+
+.title {
+	float:none;
+	text-align: center;
+	font-weight: bold;
+	color: orange;
+	margin-bottom: 10px;
+}
+
+.header #whois {
+	float:right;
+	width: 200px;
+	height:100%;
+	text-align: center;
+}
+
+.menu {
+	position: absolute;
+	border: 1px solid gray;
+	background-color: #444;
+	width: 300px;
+	left: 25px;
+	min-height: 80%;
+}
+
+.content {
+	position: absolute;
+	border: 1px solid gray;
+	background-color: #444;
+	width: 950px;
+	left: 350px;
+	min-height: 80%;
+	padding: 10px;
+}
+
+
+.list {
+	text-align: center;
+	background-color: #555;
+	margin: 10px;
+}
+
+.list input {
+	width: 100%;
+	border: none;
+	background-color: #555;
+}
+
+a {
+	color: #222;
+	text-decoration: none;
+}
+
+a:HOVER {
+	color: orange;
+}
+
+.info {
+	min-height: 100px;
+	text-align: center;
+	border: 1px solid gray;
+	margin-bottom: 25px;	
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+
+
+fieldset  {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border: 1px solid gray;
+	width: 500px;
+	}
+
+legend {
+	padding: 10px;
+}
+
+label {
+	float: left;
+	clear: left;
+	width: 200px;
+}
+
+input {
+	width: 200px;
+	font-size: 10px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #444;
+	background: #F6F6f6;
+	margin-bottom: 1px;
+}
+
+
+#cardStatus {
+	float: left;
+	clear: right;
+	width: 100px;
+	font-size: 10px;
+	padding: 5px 0px 4px 0px;
+	border: 1px solid #444;
+	background: #F6F6f6;
+}
+	
+select{
+	width: 212px;
+	font-size: 10px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #444;
+	background: #F6F6f6;
+	margin-bottom: 1px;
+}	
+
+#submit {
+	width: 100px;
+	margin-left: 200px;
+}
+
+.status.active {
+	font: bold;
+	color: green;
+}
+
+.status.deactivated {
+	font: bold;
+	color: red;
+}
+
+.info table {
+	border: 1px solid #444;
+	width: 100%;
+	font-size: 12px;
+}
+
+#tableHead {
+	font-size: 17px;
+	font-weight: bold;	
+}
+
+.info td{
+	border: 1px solid #333;
+	width: auto;
+}
+#error{
+	text-align: center;
+	font-size: small;
+	color: red;  
+}
+
+.find{
+	width: 80%;
+}
